@@ -17,9 +17,9 @@ public class Phone {
 
 //  2. Create three instances of this class
     public static void main(String[] args) {
-        Phone iphone = new Phone(15, "Pro", 200.20);
-        Phone xiaomi = new Phone(5, "Pro", 200.30);
-        Phone nokia = new Phone(6300, "brick", 200.40);
+        Phone iphone = new Phone(15, "iphone", 200.20);
+        Phone xiaomi = new Phone(5, "xiaomi", 200.30);
+        Phone nokia = new Phone(6300, "nokia", 200.40);
 
         List<Phone> phones = new ArrayList<>();
         phones.add(iphone);
@@ -28,7 +28,7 @@ public class Phone {
 
 //  3. Print the values of these variables to the console.
         for(Phone p: phones){
-            System.out.println("Характеристики iphone: " + " версия: "+ p.number + ", модель: " + p.model + ", вес в граммах: " + p.weight);
+            System.out.println("Характеристики: " + " версия: "+ p.number + ", модель: " + p.model + ", вес в граммах: " + p.weight);
         }
     }
 
