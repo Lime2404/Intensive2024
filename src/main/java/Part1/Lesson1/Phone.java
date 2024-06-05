@@ -9,17 +9,18 @@ public class Phone {
     String model;
     Double weight;
 
-    public Phone(int number, String model, Double weight) {
-        this.number = number;
+    public Phone(String model, int number, Double weight) {
+
         this.model = model;
+        this.number = number;
         this.weight = weight;
     }
 
 //  2. Create three instances of this class
     public static void main(String[] args) {
-        Phone iphone = new Phone(15, "iphone", 200.20);
-        Phone xiaomi = new Phone(5, "xiaomi", 200.30);
-        Phone nokia = new Phone(6300, "nokia", 200.40);
+        Phone iphone = new Phone("iphone", 15, 200.20);
+        Phone xiaomi = new Phone("xiaomi", 5, 200.30);
+        Phone nokia = new Phone("nokia", 6300, 200.40);
 
         List<Phone> phones = new ArrayList<>();
         phones.add(iphone);
@@ -28,7 +29,7 @@ public class Phone {
 
 //  3. Print the values of these variables to the console.
         for(Phone p: phones){
-            System.out.println("Характеристики: " + " версия: "+ p.number + ", модель: " + p.model + ", вес в граммах: " + p.weight);
+            System.out.println("Phone specifications: " + " model: " + p.model + ", version: " + p.number + ", weight(grams): " + p.weight);
         }
     }
 
