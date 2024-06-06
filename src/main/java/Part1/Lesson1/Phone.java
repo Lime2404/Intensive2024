@@ -66,7 +66,7 @@ public class Phone {
 // 8. Add an overloaded receiveCall method that accepts two parameters - the caller's name and the
 // caller's phone number
     public void receiveCall(String name, int number){
-        System.out.println(name + number);
+        System.out.println(name + number); //if needed to verify the result
     }
 
 }
