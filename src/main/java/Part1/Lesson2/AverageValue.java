@@ -9,7 +9,6 @@ import java.util.List;
 
 public class AverageValue {
 
-
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<Double> data = new ArrayList<>();
@@ -22,6 +21,4 @@ public class AverageValue {
        static Double average(Double first, Double second, Double third){
         return (first + second + third)/3;
     }
-
-
 }
