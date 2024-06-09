@@ -12,14 +12,14 @@ public class AverageValue {
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<Integer> data = new ArrayList<>();
+        ArrayList<Double> data = new ArrayList<>();
         for(int i = 0; i < 3; i++){
-            data.add(Integer.parseInt(reader.readLine()));
+            data.add(Double.parseDouble(reader.readLine()));
         }
-        float averageValue = average(data.get(0), data.get(1), data.get(2));
+        Double averageValue = average(data.get(0), data.get(1), data.get(2));
         System.out.println("The average value is " + averageValue);
     }
-       static float average(int first, int second, int third){
+       static Double average(Double first, Double second, Double third){
         return (first + second + third)/3;
     }
 
