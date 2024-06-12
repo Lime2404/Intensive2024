@@ -1,4 +1,4 @@
-import Part1.Lesson3.CreateHashMap.Product;
+package Part1.Lesson3.CreateHashMap;
 
 import java.util.HashMap;
 import java.util.Map;
