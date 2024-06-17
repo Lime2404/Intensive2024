@@ -2,8 +2,8 @@ package Part1.Lesson1;
 
 public class Person {
 //    1 Create a Person class that contains variables
-    String fillName;
-    int age;
+    private String fillName;
+    private int age;
 
 //    2 move() and talk() methods, to print the message "So-and-so Person is speaking" to the console.
     void move(){

@@ -4,6 +4,6 @@ package Part1.Lesson1.com.company.details;
     public class Engine {
 
 //    3. The Engine class contains the fields - power, producer
-        double power;
-        String producer;
+        private double power;
+        private String producer;
     }

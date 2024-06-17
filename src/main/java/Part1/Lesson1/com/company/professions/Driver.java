@@ -6,6 +6,6 @@ import Part1.Lesson1.Person;
 public class Driver extends Person { //  7. Let the Driver class extend the Person class
 
 //  2 The Driver class contains fields - full name, driving experience.
-    String fullName;
-    int drivingExperience;
+    private String fullName;
+    private int drivingExperience;
 }

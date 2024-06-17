@@ -17,8 +17,8 @@ public class ScholarshipDistribution {
         students.add(aspirant2);
 
         for(Student s: students){
-            int scholarship = s.getScholarship(s.averageMark);
-            System.out.println(s.firstName + " gets " + scholarship + " UAH");
+            int scholarship = s.getScholarship(s.getAverageMark());
+            System.out.println(s.getFirstName() + " gets " + scholarship + " UAH");
         }
     }
 }

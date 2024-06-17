@@ -5,9 +5,9 @@ import java.util.List;
 
 //  1. Create a Phone class that contains
 public class Phone {
-    int number;
-    String model;
-    Double weight;
+    private int number;
+    private String model;
+    private Double weight;
 
 //  2. Create three instances of this class
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class Phone {
         }
     }
 
-    public void receiveCall(String callerName){
+    private void receiveCall(String callerName){
         System.out.println("Calling " + callerName);
     }
 
@@ -39,7 +39,7 @@ public class Phone {
     }
 
 // 5. Add a constructor to the Phone class that takes three parameters as input to initialize the class variables
-        public Phone(int number, String model, Double weight) {
+        Phone(int number, String model, Double weight) {
         this.model = model;
         this.number = number;
         this.weight = weight;
@@ -60,5 +60,4 @@ public class Phone {
     public void receiveCall(String callerName, int callerNumber){
         System.out.println(callerName + callerNumber); //if needed to verify the result
     }
-
 }

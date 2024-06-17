@@ -2,9 +2,9 @@ package Part1.Lesson1.com.company.vehicles;
 
 //    5 To create a derivative of the Car class - Lorry (truck),
 public class Lorry extends Car{
-    double capacity;
+    private double capacity;
 
-    public Lorry(double capacity, double weight) {
+    Lorry(double capacity, double weight) {
         this.capacity = capacity;
         super.weight = weight;
     }
@@ -14,5 +14,4 @@ public class Lorry extends Car{
         truck.start();
         truck.stop();
     }
-
 }
