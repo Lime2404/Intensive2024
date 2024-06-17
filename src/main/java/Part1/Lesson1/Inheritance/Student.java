@@ -1,13 +1,16 @@
 package Part1.Lesson1.Inheritance;
 
-import java.util.ArrayList;
-
+// 1 implement the  Student class
 public class Student {
+
+//    2 The Student class contains variables
     String firstName;
     String lastName;
     String group;
     double averageMark;
+    boolean hasPdD = false;
 
+//    3 Create a getScholarship() method for the Student class
     int getScholarship(double averageMark){
         if(averageMark == 5){
             return 2000;

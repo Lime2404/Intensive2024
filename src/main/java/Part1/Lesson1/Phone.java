@@ -9,18 +9,11 @@ public class Phone {
     String model;
     Double weight;
 
-    public Phone(String model, int number, Double weight) {
-
-        this.model = model;
-        this.number = number;
-        this.weight = weight;
-    }
-
 //  2. Create three instances of this class
     public static void main(String[] args) {
-        Phone iphone = new Phone("iphone", 1234, 200.20);
-        Phone xiaomi = new Phone("xiaomi", 1000, 200.30);
-        Phone nokia = new Phone("nokia", 6300, 200.40);
+        Phone iphone = new Phone(1234, "iphone",200.20);
+        Phone xiaomi = new Phone(1000,"xiaomi",200.30);
+        Phone nokia = new Phone(6300,"nokia",200.40);
 
         List<Phone> phones = new ArrayList<>();
         phones.add(iphone);
@@ -33,23 +26,22 @@ public class Phone {
             System.out.println("Phone specifications: " + " model: " + p.model + ", version: " + p.number + ", weight(grams)e: " + p.weight);
             p.receiveCall("John");
             p.getNumber();
-            p.receiveCall("Petr", p.number);
         }
     }
 
-    public void receiveCall(String name){
-        System.out.println("Calling " + name);
+    public void receiveCall(String callerName){
+        System.out.println("Calling " + callerName);
     }
 
     public int getNumber(){
-        System.out.println(number);
+//        System.out.println(number);
         return number;
     }
 
 // 5. Add a constructor to the Phone class that takes three parameters as input to initialize the class variables
-    public Phone(int number, String model, Double weight) {
-        this.number = number;
+        public Phone(int number, String model, Double weight) {
         this.model = model;
+        this.number = number;
         this.weight = weight;
     }
 
@@ -65,8 +57,8 @@ public class Phone {
 
 // 8. Add an overloaded receiveCall method that accepts two parameters - the caller's name and the
 // caller's phone number
-    public void receiveCall(String name, int number){
-        System.out.println(name + number); //if needed to verify the result
+    public void receiveCall(String callerName, int callerNumber){
+        System.out.println(callerName + callerNumber); //if needed to verify the result
     }
 
 }
