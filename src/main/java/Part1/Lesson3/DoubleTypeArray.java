@@ -1,7 +1,7 @@
 package Part1.Lesson3;
 
 import java.util.Arrays;
-
+//One-dimensional array of double type.
 public class DoubleTypeArray {
     public static void main(String[] args) {
         double[] doubleArray = {1.0, 2.0, 3.0, 4.0};
