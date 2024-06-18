@@ -2,15 +2,13 @@ package Part1.Lesson2;
 
 import java.util.Scanner;
 
+// Days of the week with the switch operator.
 public class WeekDaysSwitch {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             while (scanner.hasNextInt()) {
                 int value = scanner.nextInt();
-                if (value >= 1 && value <= 7) {
-//     Option 1:
-//                    System.out.println(
-//     Option 2:
+//  Rewrite the task "6. Days of the Week" using the switch statement.
                     switch (value) {
                         case 1:
                             System.out.println("Monday");
@@ -30,6 +28,7 @@ public class WeekDaysSwitch {
                         default:
                             System.out.println("Day off");
                             break;
+//          2nd option
 //                        case 1 -> "Monday";
 //                        case 2 -> "Tuesday";
 //                        case 3 -> "Wednesday";
@@ -40,5 +39,4 @@ public class WeekDaysSwitch {
                     }
                 }
             }
-        }
 }
