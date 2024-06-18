@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
+//To create a program that will display the smallest of the three real numbers entered by the user
 public class SmallerNumber {
 
     public static void main(String[] args) throws IOException {
