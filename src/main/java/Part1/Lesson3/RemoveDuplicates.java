@@ -20,12 +20,12 @@ public class RemoveDuplicates {
                 int number = Integer.parseInt(element.trim());
                 numberSet.add(number);
             } catch (NumberFormatException e){
-                System.out.println("input contain non integer symbols");
+                System.out.println("input contain non integer symbol " + element);
             }
         }
         List<Integer> resultList = new ArrayList<>(numberSet);
 //  3. Display the result on the screen.
-        System.out.println("Массив после удаления дубликатов:");
+        System.out.println("Множество после удаления дубликатов:");
         for (int number : resultList) {
             System.out.print(number + " ");
         }
