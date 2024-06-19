@@ -37,7 +37,7 @@ public class PairsOfValues {
         PairsOfValues store = new PairsOfValues();
         store.addToy("Teddy", new Product("Bear", "plush toy"));
         store.addToy("Uno", new Product("Uno", "card"));
-        store.addToy("Lada", new Product("Lada", "car"));
+        store.addToy("Kalina", new Product("Lada", "car"));
 
         System.out.println("Printing Entry Set:");
         store.printEntrySet();
