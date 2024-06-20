@@ -10,9 +10,9 @@ public class Palindrome {
         Character first = input.charAt(0);
         Character last = input.charAt(length-1);
         if(first.equals(last)){
-            System.out.println("YES");;
+            System.out.println("YES");
         }
-        else System.out.println("NO");;
+        else System.out.println("NO");
     }
 
     public static void main(String[] args) {
