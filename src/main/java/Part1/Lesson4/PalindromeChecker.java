@@ -10,8 +10,8 @@ public class PalindromeChecker {
 
         for (String s : input) {
             String monoString = s.replaceAll("[\\W]", "").toLowerCase();
-            String backwordmonoString = new StringBuilder(monoString).reverse().toString();
-            if (monoString.equals(backwordmonoString)) {
+            String backwordMonoString = new StringBuilder(monoString).reverse().toString();
+            if (monoString.equals(backwordMonoString)) {
                 System.out.println("YES, " + "\"" + s + "\" is a palindrome.");
             } else {
                 System.out.println("NO, " + "\"" + s + "\" is not a palindrome.");
