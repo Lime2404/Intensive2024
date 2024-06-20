@@ -29,9 +29,13 @@ public class Exceptions {
     public static boolean validateCreds(String login, String password, String confirmPassword) {
         try{
 //  2.Login must contain only Latin letters, numbers and an underscore.The login must be less than 20 characters long.
-            if (!login.matches("^[a-zA-Z0-9_]+$") && login.length() < 20) {
+            if (!login.matches("^[a-zA-Z0-9_]+$") && login.length() >= 20) {
 //  If the login does not meet these requirements, you must throw a WrongLoginException.
                 throw new WrongLoginException("Login is invalid");
+            }
+//  If the login does not meet these requirements, you must throw a WrongLoginException.
+            if ( login.length() > 20) {
+                throw new WrongLoginException("Login length is over 20 symbols");
             }
 //  4.Password must contain only Latin letters, numbers
             if (!password.matches("[a-zA-Z0-9]+")) {
@@ -40,7 +44,7 @@ public class Exceptions {
             }
             if(!password.equals(confirmPassword)){
 //  7. The method returns true if the values are true or false otherwise.
-                throw new WrongPassException("Inserted Passwords do not match");
+                throw new WrongPassException("Passwords do not match");
             }
                 return true;
 //  6. Exception handling is done within the method.
